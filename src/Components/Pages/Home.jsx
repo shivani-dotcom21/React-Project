@@ -106,8 +106,8 @@ export default function Home() {
               loop={true}
             >
               <SwiperSlide>
-                <div className="relative flex justify-between items-center gap-5 mx-20 ">
-                  <div className="hidden lg:block">
+                <div className="relative flex justify-between mx-40  items-center  ">
+                  <div className="hidden lg:block w-100">
                     <figure className=" absolute top-20 left-10 ">
                       <img
                         src="https://www.omegawatches.com/static/version1784264796/frontend/Omega/default/default/Reflet_PageBuilder/images/ma13/step-1-1.jpg"
@@ -137,7 +137,7 @@ export default function Home() {
                     </video>
                   </div>
 
-                  <div className=" hidden lg:block w-100 mt-20">
+                  <div className=" hidden lg:block w-100 ">
                     <div>
                       <h1 className="text-3xl text-red-700 my-5 font-bold font-moonDance">
                         HEADING FOR THE MOON
