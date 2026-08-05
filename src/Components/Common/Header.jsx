@@ -15,7 +15,7 @@ export default function Header() {
 
   return (
     <>
-      <section className=" fixed top-0  z-9999  bg-white font-poppins w-full flex items-center justify-between shadow-lg  shadow-gray-200 uppercase px-5 lg:px-15 text-sm  md:sticky top-0  bg-white">
+      <section className=" sticky top-0  z-9999  bg-white font-poppins w-full flex items-center justify-between shadow-lg  shadow-gray-200 uppercase px-5 lg:px-15 text-sm  md:sticky top-0  bg-white">
         <div>
           <ul className=" hidden lg:flex justify-between gap-10">
             <Link>

@@ -1,6 +1,10 @@
 import React from "react";
 import { CiLocationOn } from "react-icons/ci";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import {  Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 export default function Details() {
   return (
@@ -14,8 +18,13 @@ export default function Details() {
         </figure>
         <div className="w-full grid gap-10 text-center lg:text-left">
           <h1 className="text-2xl font-inter"> Error 404</h1>
-          <h1 className="text-5xl font-bold text-red-800 uppercase font-moonDance">We’re Sorry,</h1>
-          <p className="text-gray-700 font-robotMono">We looked everywhere but the page you requested was <br/> not found.</p>
+          <h1 className="text-5xl font-bold text-red-800 uppercase font-moonDance">
+            We’re Sorry,
+          </h1>
+          <p className="text-gray-700 font-robotMono">
+            We looked everywhere but the page you requested was <br /> not
+            found.
+          </p>
           <button className="mx-auto lg:mx-0 font-outfit w-fit border bg-opaque px-10 py-3 bg-red-800 text-white hover:bg-white hover:text-black">
             HOME PAGE
           </button>
@@ -26,8 +35,82 @@ export default function Details() {
         <h1 className="text-3xl text-red-800 text-center py-15  font-headline  ">
           OUR SUGGETIONS
         </h1>
-        <div className="flex justify-center items-center gap-5">
+        
+          {/* Responsive for sm */}
+        <div className="lg:hidden sm:block flex justify-center items-center gap-5">
+          <div className="w-75 max-w-3xl">
+            <Swiper
+              modules={[ Pagination, Autoplay]}
+              slidesPerView={1}
+              navigation={true}
+              pagination={{ clickable: true }}
+              autoplay={{ delay: 2000 }}
+              loop={true}
+            >
+              <SwiperSlide>
+                <div className="shadow-xl">
+                  <figure>
+                    <img
+                      src="https://www.omegawatches.com/media/wysiwyg/404-Men.jpeg"
+                      className="w-[800px] lg:w-75 hover:scale-98 duration-300 ease-in-out"
+                    />
+                  </figure>
+                  <div className="grid  justify-center gap-5 my-10">
+                    <p className=" font-semibold text-red-700 font-robotMono">
+                      {" "}
+                      MEN'S SELECTION
+                    </p>
+                    <button className="w-fit shadow-lg mx-auto text-[14px] px-2 hover:text-red-600 hover:border-b border-red-600 font-inter">
+                      See More
+                    </button>
+                  </div>
+                </div>
+              </SwiperSlide>
 
+              <SwiperSlide>
+                <div className="shadow-xl">
+                  <figure>
+                    <img
+                      src="https://www.omegawatches.com/media/wysiwyg/404-women.jpeg"
+                      className="w-[800px] lg:w-75 hover:scale-98 duration-300 ease-in-out"
+                    />
+                  </figure>
+                  <div className="grid  justify-center gap-5 my-10">
+                    <p className=" font-semibold text-red-700 font-robotMono">
+                      {" "}
+                      MEN'S SELECTION
+                    </p>
+                    <button className="w-fit shadow-lg mx-auto text-[14px] px-2 hover:text-red-600 hover:border-b border-red-600">
+                      See More
+                    </button>
+                  </div>
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div className="shadow-xl">
+                  <figure>
+                    <img
+                      src="https://www.omegawatches.com/media/wysiwyg/404-Collection.jpeg"
+                      className="w-[800px] lg:w-75 hover:scale-98 duration-300 ease-in-out"
+                    />
+                  </figure>
+                  <div className="grid  justify-center gap-5 my-10">
+                    <p className=" font-semibold text-red-700 font-robotMono">
+                      {" "}
+                      MEN'S SELECTION
+                    </p>
+                    <button className="w-fit shadow-lg mx-auto text-[14px] px-2 hover:text-red-600 hover:border-b border-red-600">
+                      See More
+                    </button>
+                  </div>
+                </div>
+              </SwiperSlide>
+            </Swiper>
+          </div>
+        </div>
+
+        <div className="hidden lg:block lg:flex justify-center items-center gap-5">
           <div className="shadow-xl">
             <figure>
               <img
@@ -36,7 +119,10 @@ export default function Details() {
               />
             </figure>
             <div className="grid  justify-center gap-5 my-10">
-              <p className=" font-semibold text-red-700 font-robotMono"> MEN'S SELECTION</p>
+              <p className=" font-semibold text-red-700 font-robotMono">
+                {" "}
+                MEN'S SELECTION
+              </p>
               <button className="w-fit shadow-lg mx-auto text-[14px] px-2 hover:text-red-600 hover:border-b border-red-600 font-inter">
                 See More
               </button>
@@ -51,7 +137,10 @@ export default function Details() {
               />
             </figure>
             <div className="grid  justify-center gap-5 my-10">
-              <p className=" font-semibold text-red-700 font-robotMono"> MEN'S SELECTION</p>
+              <p className=" font-semibold text-red-700 font-robotMono">
+                {" "}
+                MEN'S SELECTION
+              </p>
               <button className="w-fit shadow-lg mx-auto text-[14px] px-2 hover:text-red-600 hover:border-b border-red-600">
                 See More
               </button>
@@ -66,14 +155,17 @@ export default function Details() {
               />
             </figure>
             <div className="grid  justify-center gap-5 my-10">
-              <p className=" font-semibold text-red-700 font-robotMono"> MEN'S SELECTION</p>
+              <p className=" font-semibold text-red-700 font-robotMono">
+                {" "}
+                MEN'S SELECTION
+              </p>
               <button className="w-fit shadow-lg mx-auto text-[14px] px-2 hover:text-red-600 hover:border-b border-red-600">
                 See More
               </button>
             </div>
           </div>
-
         </div>
+
         <div className="grid justify-center py-15">
           <button className="w-fit font-inter border bg-opaque px-8 py-3 items-center bg-red-800 text-white hover:bg-white hover:text-black">
             MORE SUGGESTIONS
@@ -89,8 +181,12 @@ export default function Details() {
           />
         </figure>
         <div className="w-full lg:w-100 grid gap-10 justify-center items-center">
-          <CiLocationOn  className="text-2xl"/>
-          <p className="text-5xl text-gray-600"> STORE <br/>LOCATOR</p>
+          <CiLocationOn className="text-2xl" />
+          <p className="text-5xl text-gray-600">
+            {" "}
+            STORE <br />
+            LOCATOR
+          </p>
           <button className="w-full font-inter border bg-opaque px-10 py-3 bg-red-700 text-white hover:bg-white hover:text-black">
             FIND A STORE
           </button>
