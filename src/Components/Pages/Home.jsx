@@ -106,7 +106,7 @@ export default function Home() {
               loop={true}
             >
               <SwiperSlide>
-                <div className="relative flex justify-between items-center mx-50 ">
+                <div className="relative flex justify-between items-center gap-5 mx-20 ">
                   <div className="hidden lg:block">
                     <figure className=" absolute top-20 left-10 ">
                       <img
