@@ -98,7 +98,7 @@ export default function Home() {
 
           <div>
             <Swiper
-              modules={[Pagination]}
+              modules={[Navigation, Pagination]}
               slidesPerView={1}
               navigation={true}
               pagination={{ clickable: true }}
