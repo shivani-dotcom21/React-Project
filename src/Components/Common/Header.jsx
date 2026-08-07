@@ -45,7 +45,7 @@ export default function Header() {
             />
           </figure>
           <ul className=" hidden lg:flex gap-10 ">
-            <Link>
+            <Link to='/aqua-terra'>
               <li className="hover:border-b-2 h-8 border-red-600 hover:text-red-600 ">
                 watches
               </li>

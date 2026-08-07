@@ -2,6 +2,7 @@ import React from "react";
 import { MdOutlineExpandMore } from "react-icons/md";
 import Footer from "../Common/Footer";
 import { MdOutlineFilterVintage } from "react-icons/md";
+import { Link } from "react-router";
 
 export default function AquaTerra() {
   return (
@@ -69,6 +70,7 @@ export default function AquaTerra() {
         </section>
 
         <section className="grid grid-cols-2  lg:grid-cols-5 gap-4 px-2 ">
+          <Link to='/details'>
           <div className=" shadow-lg  w-full h-full p-2 hover:border border-gray-200">
             <figure className="bg-gray-100 ">
               <img
@@ -81,11 +83,14 @@ export default function AquaTerra() {
               <p className="font-lighter text-[13px] font-robotMono">
                 44 mm , steel on NATO strap
               </p>
+              
               <button className="w-fit font-inter text-shadow-lg my-10 mx-auto text-[14px] px-2 hover:text-red-600 hover:border-b border-red-600">
                 Details
               </button>
+            
             </div>
           </div>
+          </Link>
 
           <div className=" shadow-lg w-full h-full p-2 hover:border border-gray-200 ">
             <figure className="bg-gray-100 ">
